@@ -1,4 +1,5 @@
 import { Education } from './Education';
+import EducationSequence from './Education/EducationSequence';
 import { LandingSection } from './LandingSection';
 import { Navbar, NavLink } from './Navbar';
 import './index.css'
@@ -8,7 +9,7 @@ function App() {
 
 
     return (
-        <div className='h-[100vh] justify-center content-center text-center px-10 xl:px-48 '>
+        <div className='h-full justify-center content-center text-center px-10 xl:px-48 '>
             <Navbar>
                 {
                     [
@@ -21,7 +22,20 @@ function App() {
                 }
             </ Navbar>
             <LandingSection />
-            <Education />
+            <Education>
+                <EducationSequence
+                    title={"Software Engineer"}
+                    startYear={"2021"}
+                    endYear={"present"}
+                    location={"University Of Constantine 2"}
+                />
+                <EducationSequence
+                    title={"Bacalaureat of exact sciences"}
+                    startYear={"2018"}
+                    endYear={"2019"}
+                    location={"Fatma Zahra High School"}
+                />
+            </Education>
         </div>
     );
 }
