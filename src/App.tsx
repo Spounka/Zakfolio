@@ -1,16 +1,22 @@
-import React from 'react';
 import { Navbar, NavLink } from './Navbar';
 import './index.css'
 
 function App() {
     document.title = "Spounks Von Spounks"
+
+
     return (
-        <div>
+        <div className='justify-center content-center text-center h-20 lg:px-48 px-20'>
             <Navbar>
-                <NavLink link={"#title"} title={"Hello there"} />
-                <NavLink link={"#title2"} title={"Nazih"} />
-                <NavLink link={"#title3"} title={"Rawad"} />
-                <NavLink link={"#title4"} title={"Youda"} />
+                {
+                    [
+                        ["#education", "Education"],
+                        ["#projects", "Projects"],
+                        ["#contact", "Contact"],
+                    ].map(([link, title]) => {
+                        return (<NavLink key={link} link={link} title={title} />)
+                    })
+                }
             </ Navbar>
         </div>
     );

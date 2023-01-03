@@ -2,11 +2,9 @@ import React from 'react'
 
 export default function Navbar({ children }: any) {
     return (
-        <nav style={{ display: "flex" }}>
-            <h3>Hello There</h3>
-            <ul style={{ display: "flex", listStyle:"none" }}>
-                {children}
-            </ul>
+        <nav className='pt-8 w-full justify-center md:justify-start flex flex-row align-middle px-2 py-5'>
+            <h5 className='font-bold hidden md:block md:mr-20'>Abderrazak Maallem</h5>
+            {children}
         </nav>
     )
 }

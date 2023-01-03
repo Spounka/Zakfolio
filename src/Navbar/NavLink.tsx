@@ -2,8 +2,6 @@ import React from 'react'
 
 export default function NavLink({ link, title }: any) {
     return (
-        <li>
-            <a href={link}>{title}</a>
-        </li>
+        <a className={'px-2 md:px-5 font-semibold text-slate-400'} href={link} > {title}</a >
     )
 }
