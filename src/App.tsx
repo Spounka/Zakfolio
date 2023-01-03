@@ -1,3 +1,4 @@
+import { Education } from './Education';
 import { LandingSection } from './LandingSection';
 import { Navbar, NavLink } from './Navbar';
 import './index.css'
@@ -7,7 +8,7 @@ function App() {
 
 
     return (
-        <div className='justify-center content-center text-center h-20 px-10 xl:px-48 '>
+        <div className='h-[100vh] justify-center content-center text-center px-10 xl:px-48 '>
             <Navbar>
                 {
                     [
@@ -20,6 +21,7 @@ function App() {
                 }
             </ Navbar>
             <LandingSection />
+            <Education />
         </div>
     );
 }
