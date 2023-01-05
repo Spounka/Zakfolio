@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { Education } from './Education';
 import EducationSequence from './Education/EducationSequence';
 import { LandingSection } from './LandingSection';
@@ -10,7 +10,7 @@ import { projects } from './projects';
 import { AnimatePresence } from 'framer-motion';
 
 function App() {
-    document.title = "Spounks Von Spounks"
+    document.title = "Abderrazak Maallem"
     const [modalActive, setModalActive] = useState(false)
     const [activeProject, setActiveProject] = useState(projects[0])
 
